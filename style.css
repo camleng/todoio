@@ -1,0 +1,49 @@
+body {
+    font-family: 'Fira Mono', monospace;
+    color: black;
+}
+
+.navbar {
+    background: #d8453b;
+}
+
+.navbar-brand {
+    display: inline-block;
+    font-size: 2em;
+    animation: slideLeft 750ms;
+}
+
+.navbar-brand::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: white;
+    transition: 200ms;
+}
+
+.navbar-brand:hover::after {
+    width: 100%;
+}
+
+@keyframes slideLeft {
+   from { margin-left: 2em; }
+   to { margin-left: 0; }
+}
+
+.container-fluid {
+    margin-top: 6em;
+}
+
+.title {
+    margin-bottom: 0.5em;
+}
+
+.card {
+    margin-bottom: 1em;
+    box-shadow: 5px 5px 15px -10px;
+}
+
+.strikethrough {
+    text-decoration-line: line-through;
+}
