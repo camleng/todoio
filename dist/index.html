@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.fa3f39cd.css">
+    <link rel="stylesheet" href="/style.11460902.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="/script.d2545d9d.js" defer=""></script>
+    <script src="/script.b903774d.js" defer=""></script>
     <title>Todoio</title>
-<script src="/style.fa3f39cd.js"></script></head>
+<script src="/style.11460902.js"></script></head>
 
 <body>
     <div id="app">
@@ -19,11 +19,13 @@
             <a href="#" class="navbar-brand">
                 Todoio
             </a>
+            <div class="bar"></div>
         </nav>
 
         <div class="container-fluid">
             <div class="agenda" v-if="todos.length > 0">
                 <h1 class="title">What needs done?</h1>
+
                 <div class="col-md-6">
                     <div class="card" v-for="todo in todos">
                         <div class="card-body">
@@ -33,6 +35,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="clear" v-if="todos.length == 0">
                 <h1>Nothing to do here!</h1>
             </div>
